@@ -471,29 +471,29 @@ message CreateReplicationOpts {
     // The name of the pool on which volume will be created, required.
     string poolName = 9;
     // The metadata of the primary replication, optional.
-    map<string, string> primaryReplicationDriverData = 11;
+    map<string, string> primaryReplicationDriverData = 10;
     // The metadata of the seondary replication, optional.
-    map<string, string> secondaryReplicationDriverData = 12;
+    map<string, string> secondaryReplicationDriverData = 11;
     // The dock id.
-    string dockId = 13;
+    string dockId = 12;
     // The replication driver type.
-    string driverName = 14;
+    string driverName = 13;
     // The Context
-    string context = 15;
+    string context = 14;
     // Whether is primary replication
-    bool  isPrimary = 16;
+    bool  isPrimary = 15;
     // The replication metadata
-    map<string, string> metadata = 17;
+    map<string, string> metadata = 16;
     // The volume data list
-    repeated  VolumeData volumeDataList = 18;
+    repeated  VolumeData volumeDataList = 17;
     //the replication mode sync/async
-    string replicationMode = 19;
+    string replicationMode = 18;
     // 0 means sync replication.
-    int64 ReplicationPeriod = 20;
+    int64 ReplicationPeriod = 19;
     // replication bandwidth
-    int64 ReplicationBandwidth = 21;
+    int64 ReplicationBandwidth = 20;
     // The Serialized profile
-    string profile = 22;
+    string profile = 21;
 }
 
 // Delete ReplicationOpts is a structure which indicates all required properties
@@ -520,21 +520,21 @@ message DeleteReplicationOpts {
     // The name of the pool on which volume will be created, required.
     string poolName = 9;
     // The metadata of the primary replication, optional.
-    map<string, string> primaryReplicationDriverData = 11;
+    map<string, string> primaryReplicationDriverData = 10;
     // The metadata of the seondary replication, optional.
-    map<string, string> secondaryReplicationDriverData = 12;
+    map<string, string> secondaryReplicationDriverData = 11;
     // The dock id.
-    string dockId = 13;
+    string dockId = 12;
     // The replication driver type.
-    string driverName = 14;
+    string driverName = 13;
     // The Context
-    string context = 15;
+    string context = 14;
     // The replication metadata
-    map<string, string> metadata = 16;
+    map<string, string> metadata = 15;
     // Whether is primary replication
-    bool  isPrimary = 17;
+    bool  isPrimary = 16;
     // The Serialized profile
-    string profile = 18;
+    string profile = 17;
 }
 
 
@@ -560,21 +560,21 @@ message EnableReplicationOpts {
     // The name of the pool on which volume will be created, required.
     string poolName = 9;
     // The metadata of the primary replication, optional.
-    map<string, string> primaryReplicationDriverData = 11;
+    map<string, string> primaryReplicationDriverData = 10;
     // The metadata of the seondary replication, optional.
-    map<string, string> secondaryReplicationDriverData = 12;
+    map<string, string> secondaryReplicationDriverData = 11;
     // The dock id.
-    string dockId = 13;
+    string dockId = 12;
     // The replication driver type.
-    string driverName = 14;
+    string driverName = 13;
     // The Context
-    string context = 15;
+    string context = 14;
     // The replication metadata
-    map<string, string> metadata = 16;
+    map<string, string> metadata = 15;
     // Whether is primary replication
-    bool  isPrimary = 17;
+    bool  isPrimary = 16;
     // The Serialized profile
-    string profile = 18;
+    string profile = 17;
 }
 
 // Delete ReplicationOpts is a structure which indicates all required properties
@@ -599,21 +599,21 @@ message DisableReplicationOpts {
     // The name of the pool on which volume will be created, required.
     string poolName = 9;
     // The metadata of the primary replication, optional.
-    map<string, string> primaryReplicationDriverData = 11;
+    map<string, string> primaryReplicationDriverData = 10;
     // The metadata of the seondary replication, optional.
-    map<string, string> secondaryReplicationDriverData = 12;
+    map<string, string> secondaryReplicationDriverData = 11;
     // The dock id.
-    string dockId = 13;
+    string dockId = 12;
     // The replication driver type.
-    string driverName = 14;
+    string driverName = 13;
     // The Context
-    string context = 15;
+    string context = 14;
     // The replication metadata
-    map<string, string> metadata = 16;
+    map<string, string> metadata = 15;
     // Whether is primary replication
-    bool  isPrimary = 17;
+    bool  isPrimary = 16;
     // The Serialized profile
-    string profile = 18;
+    string profile = 17;
 }
 
 // Delete ReplicationOpts is a structure which indicates all required properties
@@ -638,29 +638,29 @@ message FailoverReplicationOpts {
     // The name of the pool on which volume will be created, required.
     string poolName = 9;
     // The metadata of the primary replication, optional.
-    map<string, string> primaryReplicationDriverData = 11;
+    map<string, string> primaryReplicationDriverData = 10;
     // The metadata of the seondary replication, optional.
-    map<string, string> secondaryReplicationDriverData = 12;
+    map<string, string> secondaryReplicationDriverData = 11;
     // The dock id.
-    string dockId = 13;
+    string dockId = 12;
     // The replication driver type.
-    string driverName = 14;
+    string driverName = 13;
     // The Context
-    string context = 15;
+    string context = 14;
     // Allow attached volume
-    bool allowAttachedVolume = 16;
+    bool allowAttachedVolume = 15;
     // The secondary backend id.
-    string secondaryBackendId = 17;
+    string secondaryBackendId = 16;
     // The replication metadata
-    map<string, string> metadata = 18;
+    map<string, string> metadata = 17;
     // Whether is primary replication
-    bool  isPrimary = 19;
+    bool  isPrimary = 18;
     message FailoverRequest {
         bool allowAttachedVolume = 1;
         string secondaryBackendId = 2;
     }
     // The Serialized profile
-    string profile = 20;
+    string profile = 19;
 }
 
 // CreateVolumeGroupOpts is a structure which indicates all required

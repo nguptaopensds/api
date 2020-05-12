@@ -3,6 +3,7 @@ module github.com/sodafoundation/api
 go 1.12
 
 require (
+	cloud.google.com/go v0.26.0 // indirect
 	github.com/LINBIT/godrbdutils v0.0.0-20180425110027-65b98a0f103a
 	github.com/RoaringBitmap/roaring v0.4.21 // indirect
 	github.com/appleboy/easyssh-proxy v1.2.0
@@ -10,6 +11,7 @@ require (
 	github.com/beorn7/perks v1.0.0 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/ceph/go-ceph v0.0.0-20170728144007-81e4191e131b
+	github.com/client9/misspell v0.3.4 // indirect
 	github.com/coreos/bbolt v1.3.3 // indirect
 	github.com/coreos/etcd v3.3.11+incompatible
 	github.com/coreos/go-semver v0.3.0 // indirect
@@ -21,7 +23,7 @@ require (
 	github.com/go-ini/ini v1.41.0
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/groupcache v0.0.0-20191027212112-611e8accdfc9 // indirect
-	github.com/golang/protobuf v1.3.2
+	github.com/golang/protobuf v1.4.0
 	github.com/google/btree v1.0.0 // indirect
 	github.com/gophercloud/gophercloud v0.0.0-20190528082055-3ad89c4ea008
 	github.com/gorilla/websocket v1.4.1 // indirect
@@ -35,7 +37,6 @@ require (
 	github.com/netapp/trident v19.10.0+incompatible
 	github.com/pierrec/lz4 v2.3.0+incompatible // indirect
 	github.com/prometheus/client_golang v0.9.2
-	github.com/prometheus/client_model v0.0.0-20190129233127-fd36f4220a90 // indirect
 	github.com/prometheus/common v0.3.0 // indirect
 	github.com/prometheus/procfs v0.0.0-20190425082905-87a4384529e0 // indirect
 	github.com/satori/go.uuid v1.2.0
@@ -52,8 +53,8 @@ require (
 	go.uber.org/zap v1.12.0 // indirect
 	golang.org/x/crypto v0.0.0-20190510104115-cbcb75029529
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0 // indirect
-	google.golang.org/appengine v1.4.0 // indirect
-	google.golang.org/grpc v1.24.0
+	google.golang.org/grpc v1.27.0
+	google.golang.org/protobuf v1.22.0
 	gopkg.in/ini.v1 v1.50.0 // indirect
 	gopkg.in/yaml.v2 v2.2.4
 	k8s.io/api v0.17.0 // indirect
